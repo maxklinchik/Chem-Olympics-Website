@@ -1,5 +1,7 @@
 # ChemOlympics — Nitrate Pollution Site
 
+**GitHub Pages**: [https://maxklinchik.github.io/Chem-Olympics-Website/](https://maxklinchik.github.io/Chem-Olympics-Website/)
+
 A small static website explaining nitrate pollution from common nitrogen fertilizers, its chemistry, impacts, and potential solutions.
 
 **Preview:**
