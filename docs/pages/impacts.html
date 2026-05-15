@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impacts — Nitrate Pollution &amp; Eutrophication</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">Chem<span>Waste</span></a>
+      <button class="hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="chemical.html">The Chemical</a></li>
+        <li><a href="impacts.html" class="active">Impacts</a></li>
+        <li><a href="pathway.html">Pathway</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="section-title">Environmental &amp; Health Impacts</h1>
+    <p class="section-subtitle">
+      Nitrate waste is common enough to look ordinary, but its chemistry makes it dangerous. It dissolves easily, travels with water,
+      fuels algal blooms, and can contaminate wells and streams before it reaches people.
+    </p>
+
+    <div class="sub-section">
+      <h3>Aquatic Ecosystems</h3>
+      <p>
+        Nitrate entering streams and lakes acts like a nutrient subsidy for algae and cyanobacteria.
+        That can quickly shift a clear-water ecosystem into a bloom-dominated one. As algae die and decompose,
+        microbes consume dissolved oxygen, creating hypoxic or anoxic conditions.
+      </p>
+      <p>
+        The result is often a seasonal dead zone: fish move away if they can, but slow-moving waters can experience
+        fish kills, habitat loss, and reduced biodiversity. Freshwater systems with repeated nitrate loading also show
+        lower water clarity and changes in plant communities.
+      </p>
+      <p>
+        Examples include farm-dominated reservoirs and shallow lakes where runoff spikes after heavy rainfall.
+      </p>
+    </div>
+
+    <div class="sub-section">
+      <h3>Wetlands &amp; Soil</h3>
+      <p>
+        Wetlands are natural nitrate filters because saturated soils support denitrifying bacteria.
+        These microbes use nitrate as an oxygen source when dissolved oxygen is scarce, ultimately converting it to nitrogen gas.
+        That makes wetlands valuable environmental buffers, but they can be overwhelmed when loading is too high.
+      </p>
+      <p>
+        Excess nitrate can acidify soil indirectly through nitrification, because hydrogen ions are produced as ammonium turns into nitrate.
+        That can lower pH, alter microbial communities, and reduce the availability of some nutrients. Sensitive wetland plants are often
+        replaced by more aggressive species that tolerate high nitrogen, which changes habitat quality for insects, amphibians, and birds.
+      </p>
+      <p>
+        Restored wetlands and riparian buffers are effective because they slow water, let particles settle, and create anaerobic zones where nitrate can be removed biologically.
+      </p>
+    </div>
+
+    <div class="sub-section">
+      <h3>Humans</h3>
+
+      <h4>Drinking Water</h4>
+      <p>
+        The most direct human-health risk is contaminated drinking water. Nitrate above the regulatory limit can contribute to
+        <strong>methemoglobinemia</strong> in infants, a condition where hemoglobin cannot carry oxygen efficiently.
+        This is why wells near heavily fertilized fields are routinely monitored.
+      </p>
+
+      <h4>Longer-Term Health Concerns</h4>
+      <p>
+        Researchers continue to study links between long-term nitrate exposure and thyroid effects, certain cancers,
+        and reproductive outcomes. The evidence is strongest for water-quality problems and infant health risk, but
+        the broader toxicology still matters because nitrate often travels with other agricultural contaminants.
+      </p>
+
+      <h4>Indirect Effects Through Food and Ecosystem Change</h4>
+      <p>
+        When algal blooms and fish kills disrupt local fisheries, the chemical problem becomes an economic and nutritional problem too.
+        Communities can lose recreation, drinking-water quality, and a reliable source of protein from local waters.
+      </p>
+    </div>
+
+    <div class="sub-section">
+      <h3>Nitrate Concentration Across the Pathway</h3>
+      <p>
+        The table below shows realistic nitrate-nitrogen concentrations in common environmental compartments.
+        Values are representative rather than universal because soil texture, rainfall, and farming practice strongly change the outcome.
+      </p>
+
+      <div class="data-table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Compartment</th>
+              <th>Example</th>
+              <th>Nitrate (mg/L as N)</th>
+              <th>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Soil pore water</td>
+              <td>Root zone below a fertilized field</td>
+              <td>4.0</td>
+              <td>Shows nitrogen still in the crop zone</td>
+            </tr>
+            <tr>
+              <td>Field runoff</td>
+              <td>Ditch after heavy rain</td>
+              <td>11.0</td>
+              <td>Can exceed drinking-water limits quickly</td>
+            </tr>
+            <tr>
+              <td>Stream reach</td>
+              <td>Agricultural tributary</td>
+              <td>8.0</td>
+              <td>Feeds downstream algal blooms</td>
+            </tr>
+            <tr>
+              <td>Lake inlet</td>
+              <td>Reservoir receiving runoff</td>
+              <td>6.0</td>
+              <td>Promotes bloom formation in slow water</td>
+            </tr>
+            <tr>
+              <td>Groundwater well</td>
+              <td>Private drinking-water well</td>
+              <td>12.0</td>
+              <td>Direct exposure pathway for families</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.8rem; color:var(--muted); margin-top:0.5rem;">
+        Values are representative classroom figures scaled from published nitrate monitoring studies.
+        Nitrate is reported here as mg/L of nitrate-nitrogen (NO<sub>3</sub>-N).
+      </p>
+    </div>
+
+    <div class="sub-section">
+      <h3>Concentration Chart</h3>
+      <div class="chart-container">
+        <h4>Nitrate Concentration Across Contamination Stages</h4>
+        <canvas id="nitrateChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/charts.js"></script>
+</body>
+</html>
